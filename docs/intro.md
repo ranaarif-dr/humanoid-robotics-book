@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /intro
 ---
 
 # Physical AI & Humanoid Robotics Textbook
@@ -36,4 +36,4 @@ Discover how Large Language Models enable humanoid robots to understand natural 
 
 Navigate to any module using the sidebar to begin learning. Each module is designed to be independently readable while building on concepts from previous modules.
 
-**Ready to explore Physical AI?** Start with [Module 1: ROS 2](/docs/module1-ros2) or jump to any module that interests you.
+**Ready to explore Physical AI?** Start with [Module 1: ROS 2](/module1-ros2) or jump to any module that interests you.

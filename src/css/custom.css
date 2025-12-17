@@ -8,32 +8,41 @@
  */
 
 :root {
-  /* Primary brand colors */
-  --ifm-color-primary: #2196F3;
-  --ifm-color-primary-dark: #1e88e5;
-  --ifm-color-primary-darker: #1976d2;
-  --ifm-color-primary-darkest: #1565c0;
-  --ifm-color-primary-light: #42a5f5;
-  --ifm-color-primary-lighter: #64b5f6;
-  --ifm-color-primary-lightest: #90caf9;
+  /* Cyberpunk Neon Theme - Primary colors (Cyan/Teal) */
+  --ifm-color-primary: #00d9ff;
+  --ifm-color-primary-dark: #00c3e6;
+  --ifm-color-primary-darker: #00b8da;
+  --ifm-color-primary-darkest: #0097b3;
+  --ifm-color-primary-light: #1fdfff;
+  --ifm-color-primary-lighter: #3fe5ff;
+  --ifm-color-primary-lightest: #7fedff;
 
-  /* Success (green for examples) */
-  --ifm-color-success: #4CAF50;
-  --ifm-color-success-dark: #43a047;
-  --ifm-color-success-darker: #388e3c;
-  --ifm-color-success-darkest: #2e7d32;
-  --ifm-color-success-light: #66bb6a;
-  --ifm-color-success-lighter: #81c784;
-  --ifm-color-success-lightest: #a5d6a7;
+  /* Success (Neon Green) */
+  --ifm-color-success: #00ff9f;
+  --ifm-color-success-dark: #00e68f;
+  --ifm-color-success-darker: #00da87;
+  --ifm-color-success-darkest: #00b370;
+  --ifm-color-success-light: #1fffab;
+  --ifm-color-success-lighter: #3fffb7;
+  --ifm-color-success-lightest: #7fffd0;
 
-  /* Danger (red for warnings) */
-  --ifm-color-danger: #F44336;
-  --ifm-color-danger-dark: #e53935;
-  --ifm-color-danger-darker: #d32f2f;
-  --ifm-color-danger-darkest: #c62828;
-  --ifm-color-danger-light: #ef5350;
-  --ifm-color-danger-lighter: #e57373;
-  --ifm-color-danger-lightest: #ef9a9a;
+  /* Danger (Neon Pink/Coral) */
+  --ifm-color-danger: #ff2e97;
+  --ifm-color-danger-dark: #e62987;
+  --ifm-color-danger-darker: #da2780;
+  --ifm-color-danger-darkest: #b32069;
+  --ifm-color-danger-light: #ff4ba5;
+  --ifm-color-danger-lighter: #ff68b3;
+  --ifm-color-danger-lightest: #ff9dcd;
+
+  /* Accent colors (Electric Orange) */
+  --accent-orange: #ff6b35;
+  --accent-orange-glow: rgba(255, 107, 53, 0.5);
+
+  /* Neon glow effects */
+  --glow-cyan: 0 0 10px rgba(0, 217, 255, 0.5), 0 0 20px rgba(0, 217, 255, 0.3);
+  --glow-orange: 0 0 10px rgba(255, 107, 53, 0.5), 0 0 20px rgba(255, 107, 53, 0.3);
+  --glow-pink: 0 0 10px rgba(255, 46, 151, 0.5), 0 0 20px rgba(255, 46, 151, 0.3);
 
   /* Font settings */
   --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
@@ -50,17 +59,21 @@
   --docusaurus-highlighted-code-line-bg: rgba(33, 150, 243, 0.1);
 }
 
-/* Dark mode */
+/* Dark mode - Enhanced Cyberpunk Theme */
 [data-theme='dark'] {
-  --ifm-color-primary: #64b5f6;
-  --ifm-color-primary-dark: #42a5f5;
-  --ifm-color-primary-darker: #2196F3;
-  --ifm-color-primary-darkest: #1e88e5;
-  --ifm-color-primary-light: #90caf9;
-  --ifm-color-primary-lighter: #bbdefb;
-  --ifm-color-primary-lightest: #e3f2fd;
+  --ifm-color-primary: #00d9ff;
+  --ifm-color-primary-dark: #00c3e6;
+  --ifm-color-primary-darker: #00b8da;
+  --ifm-color-primary-darkest: #0097b3;
+  --ifm-color-primary-light: #1fdfff;
+  --ifm-color-primary-lighter: #3fe5ff;
+  --ifm-color-primary-lightest: #7fedff;
 
-  --docusaurus-highlighted-code-line-bg: rgba(100, 181, 246, 0.15);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 217, 255, 0.15);
+
+  /* Enhanced background with subtle grid pattern */
+  --ifm-background-color: #0a0a0f;
+  --ifm-background-surface-color: #12121a;
 }
 
 /* Typography improvements for readability */
@@ -316,26 +329,85 @@
   }
 }
 
-/* Dark, minimalistic theme overrides */
+/* Dark, cyberpunk theme overrides */
 [data-theme='dark'] {
-  --ifm-background-color: #0a0a0a;
-  --ifm-background-surface-color: #1a1a1a;
-  --ifm-global-card-background-color: #1a1a1a;
-  --ifm-color-emphasis-0: #0a0a0a;
-  --ifm-color-emphasis-100: #1a1a1a;
-  --ifm-color-emphasis-200: #2a2a2a;
-  --ifm-color-emphasis-300: #3a3a3a;
-  --ifm-color-emphasis-700: #a0a0a0;
-  --ifm-color-emphasis-900: #e0e0e0;
-  --ifm-color-primary: #7877c6;
-  --ifm-color-primary-dark: #6366f1;
-  --ifm-text-color: #e0e0e0;
+  --ifm-background-color: #0a0a0f;
+  --ifm-background-surface-color: #12121a;
+  --ifm-global-card-background-color: #12121a;
+  --ifm-color-emphasis-0: #0a0a0f;
+  --ifm-color-emphasis-100: #12121a;
+  --ifm-color-emphasis-200: #1a1a28;
+  --ifm-color-emphasis-300: #252535;
+  --ifm-color-emphasis-700: #b0b0c0;
+  --ifm-color-emphasis-900: #e8e8f0;
+  --ifm-color-primary: #00d9ff;
+  --ifm-color-primary-dark: #00c3e6;
+  --ifm-text-color: #e8e8f0;
   --ifm-heading-color: #ffffff;
-  --ifm-link-color: #9b9acf;
-  --ifm-link-hover-color: #7877c6;
-  --ifm-code-background: #252525;
+  --ifm-link-color: #00d9ff;
+  --ifm-link-hover-color: #ff6b35;
+  --ifm-code-background: #1a1a28;
 }
 
 html[data-theme='dark'] {
-  background-color: #0a0a0a;
+  background-color: #0a0a0f;
+  background-image:
+    linear-gradient(rgba(0, 217, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 217, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-attachment: fixed;
+}
+
+/* Animated gradient backgrounds for special elements */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.button--primary {
+  background: linear-gradient(135deg, #00d9ff, #ff6b35, #00d9ff) !important;
+  background-size: 200% 200% !important;
+  animation: gradient-shift 3s ease infinite !important;
+  border: none !important;
+  box-shadow: var(--glow-cyan) !important;
+  font-weight: 600 !important;
+}
+
+.button--primary:hover {
+  box-shadow: var(--glow-orange) !important;
+  transform: translateY(-2px) !important;
+}
+
+.button--secondary {
+  background: transparent !important;
+  border: 2px solid #00d9ff !important;
+  color: #00d9ff !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.button--secondary::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.3), transparent) !important;
+  transition: left 0.5s !important;
+}
+
+.button--secondary:hover::before {
+  left: 100% !important;
+}
+
+.button--secondary:hover {
+  border-color: #ff6b35 !important;
+  color: #ff6b35 !important;
+  box-shadow: var(--glow-orange) !important;
 }
